@@ -1,5 +1,5 @@
 #
-# Copyright 2016 Dave Langer
+# Copyright 2017 Hasan Mujtaba
 #    
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,17 +15,9 @@
 # 
 
 
-
-#
-# This R source code file corresponds to video 7 of the YouTube series
-# "Introduction to Data Science with R" located at the following URL:
-#     https://youtu.be/fuB7s19g3nQ     
-#
-
-
 # Load raw data
-train <- read.csv("train.csv", header = TRUE)
-test <- read.csv("test.csv", header = TRUE)
+train <- read.csv("../data/train.csv", header = TRUE)
+test <- read.csv("../data/test.csv", header = TRUE)
 
 # Add a "Survived" variable to the test set to allow for combining data sets
 test.survived <- data.frame(survived = rep("None", nrow(test)), test[,])
@@ -395,7 +387,7 @@ ggplot(data.combined[1:891,], aes(x = embarked, fill = survived)) +
 
 #==============================================================================
 #
-# Video #4 - Exploratory Modeling
+# Session #4 - Exploratory Modeling
 #
 #==============================================================================
 
@@ -474,7 +466,7 @@ varImpPlot(rf.7)
 
 #==============================================================================
 #
-# Video #5 - Cross Validation
+# Session #5 - Cross Validation
 #
 #==============================================================================
 
@@ -593,7 +585,7 @@ rf.5.cv.3
 
 #==============================================================================
 #
-# Video #6 - Exploratory Modeling 2
+# Session #6 - Exploratory Modeling 2
 #
 #==============================================================================
 
@@ -607,7 +599,7 @@ rf.5.cv.3
 library(rpart)
 library(rpart.plot)
 
-# Per video #5, let's use 3-fold CV repeated 10 times 
+# Per Session #5, let's use 3-fold CV repeated 10 times
 
 # Create utility function
 rpart.cv <- function(seed, training, labels, ctrl) {

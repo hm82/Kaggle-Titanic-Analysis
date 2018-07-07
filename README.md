@@ -84,7 +84,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Hat tip to @alexeyza, @jayadeepj for solution inspiration and code organization ideas
+* Inspiration : Dave Langer and his @Youtube video series on Kaggle Titanic challenge
+
 

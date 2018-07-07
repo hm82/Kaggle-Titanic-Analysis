@@ -1,6 +1,8 @@
-# Project Title
-
-One Paragraph of project description goes here
+# Titanic: Applying Machine Learning to Predict Survival on the Titanic
+This repository contains my approaches to apply data science to predict Survival on Titanic, an actual incident and
+popular learner problem on Kaggle.com  The repository includes scripts for data cleanup, feature selection, strategies
+for data modelling, the original data sets and anaytics on the data to select appropriate ML algorithms and validate results.
+Code is available in both R and Python.
 
 ## Getting Started
 
